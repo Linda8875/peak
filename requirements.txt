@@ -51,6 +51,5 @@ webencodings==0.5.1
 websocket-client==0.57.0
 Werkzeug==1.0.1
 widgetsnbextension==3.5.1
-python-dateutil==1.5
 pandas==0.24.2
 
