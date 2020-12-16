@@ -1,5 +1,6 @@
 '''imports'''
 from flask import Flask, redirect, url_for, render_template, request, session
+from waitress import serve
 from function import genre, decade, track, length, popularity
 from werkzeug.datastructures import ImmutableMultiDict
 from dotenv import load_dotenv
@@ -81,5 +82,5 @@ def algo_input():
 
 
 '''run app'''
-if __name__ == "__main__":
-    app.run(debug=True)
+#if __name__ == "__main__":
+serve(app, host='0.0.0.0', port=8080, threads=1) #WAITRESS!
