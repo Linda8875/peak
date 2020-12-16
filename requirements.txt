@@ -1,6 +1,6 @@
-Flask==1.1.1
-requests==2.24.0
-pandas==0.24.2
-scikit-learn==0.20.4
+Flask
+requests
+pandas
+scikit-learn
 waitress
 
