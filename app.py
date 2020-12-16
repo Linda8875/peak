@@ -83,5 +83,5 @@ def algo_input():
 
 '''run app'''
 if __name__ == "__main__":
-serve(app, host='0.0.0.0', port=5000, threads=1) #WAITRESS!
+serve(app, host='0.0.0.0', port=PORT, threads=1) #WAITRESS!
 
