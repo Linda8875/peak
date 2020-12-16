@@ -3,4 +3,5 @@ requests
 pandas
 scikit-learn
 waitress
+gunicorn
 
