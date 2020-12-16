@@ -7,10 +7,15 @@ import os
 load_dotenv()
 
 
-client_id = os.environ.get('CLIENT_ID')
-client_secret = os.environ.get('CLIENT_SECRET')
-user_id = os.environ.get('user_id')
-redirect_uri = os.environ.get('SPOTIPY_REDIRECT_URI')
+#client_id = os.environ.get('CLIENT_ID')
+#client_secret = os.environ.get('CLIENT_SECRET')
+#user_id = os.environ.get('user_id')
+#redirect_uri = os.environ.get('SPOTIPY_REDIRECT_URI')
+
+client_id = os.getenv('CLIENT_ID')
+client_secret = os.getenv('CLIENT_SECRET')
+user_id = os.getenv('user_id')
+redirect_uri = os.getenv('SPOTIPY_REDIRECT_URI')
 
 #Import classes from other files
 
