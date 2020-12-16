@@ -17,6 +17,7 @@ client_id = os.getenv('CLIENT_ID')
 client_secret = os.getenv('CLIENT_SECRET')
 user_id = os.getenv('user_id')
 redirect_uri = os.getenv('SPOTIPY_REDIRECT_URI')
+refresh_token = os.getenv('refresh_token')
 
 #Import classes from other files
 from playlist import Playlist
