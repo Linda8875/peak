@@ -1,7 +1,7 @@
 '''imports'''
 from flask import Flask, redirect, url_for, render_template, request, session
-from waitress import serve
 from function import genre, decade, track, length, popularity
+from waitress import serve
 from werkzeug.datastructures import ImmutableMultiDict
 from dotenv import load_dotenv
 import os
