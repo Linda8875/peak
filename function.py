@@ -12,6 +12,3 @@ def length():
 
 def popularity():
     return ['Not Popular', 'Less Popular', 'Popular']
-
-if __name__ == '__main__':
-    genre()
