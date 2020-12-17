@@ -1137,14 +1137,12 @@ nav#filter li {
 
 .custom-select1 {
 background-color: rgb(230, 235, 234);
-box-shadow: 0 0 0 2px rgb(247, 230, 245), 0 0 0 4px rgb(247, 230, 245), 0 0 0 6px hsl(0, 0%, 4%), 0 0 0 8px hsl(0, 0%, 4%) ,0 0 0 10px hsl(0, 0%, 4%);
 text-align-last:center;
 width:100%;
 }
 
 .input-select {
 background-color: rgb(230, 235, 234);
-box-shadow: 0 0 0 2px rgb(247, 230, 245), 0 0 0 4px rgb(247, 230, 245), 0 0 0 6px hsl(0, 0%, 4%), 0 0 0 8px hsl(0, 0%, 4%) ,0 0 0 10px hsl(0, 0%, 4%);
 text-align-last:center;
 width:100%;
 }
@@ -1152,7 +1150,6 @@ width:100%;
 
 .custom-button {
 background-color: rgb(51, 212, 110);
-box-shadow: 0 0 0 2px rgb(247, 230, 245), 0 0 0 4px rgb(247, 230, 245), 0 0 0 6px hsl(0, 0%, 4%), 0 0 0 8px hsl(0, 0%, 4%) ,0 0 0 10px hsl(0, 0%, 4%);
 text-align-last:center;
 width:100%;
 }
