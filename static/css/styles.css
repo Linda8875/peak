@@ -1,6 +1,6 @@
 /*
 Theme Name: Free-Portfolio-HTML5-Responsive-Website-Sam
-Author URI: http://webthemez.com/ 
+Author URI: http://webthemez.com/
 */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 * {
@@ -114,7 +114,7 @@ h2 {
 	padding-bottom: 16px;
 	font-variant: small-caps;
 }
-/* Header 
+/* Header
 ----------------------------------------------*/
 .header {
 	position: fixed;
@@ -231,7 +231,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	background: #fff;
 	border: 0;
 }
- 
+
 .navbar-inverse .navbar-nav > li > a {
 	font-size: 1.2em;
 	line-height: normal;
@@ -294,7 +294,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 .banner-container > img {
 	width: 100%;
-	
+
 }
 .banner-content {
 	position: absolute;
@@ -323,7 +323,7 @@ padding-top: 20%;
 text-align:center;
 }
 .banner-content .social-icons{
- text-align:center; 
+ text-align:center;
  margin-top:20px;
 }
 .banner-content .social-icons a{
@@ -365,7 +365,7 @@ margin-top:25px;
  text-align:center;
  margin: 0;
 padding: 0;
-font-size: 4.5em;
+font-size: 3.5em;
 font-weight: 700;
 letter-spacing: .1em;
 line-height: 1em;
@@ -470,7 +470,7 @@ float: none;
 	font-size: 16px;
 }
 #aboutUs{
-padding:60px 0;	
+padding:60px 0;
 	}
 #aboutUs .txtHead {
 	background: #fff;
@@ -486,7 +486,7 @@ border-radius:120px;
 width:300px;
 box-shadow: 12px 0px 0px 12px rgba(13, 113, 165, 0.2), -12px 0px 0px 12px rgba(109, 139, 232, 0.2);
 }
-.tileBox p { 
+.tileBox p {
 	font-size: 15px;
 	color: #777777;
 	padding: 20px;
@@ -500,7 +500,7 @@ box-shadow: 12px 0px 0px 12px rgba(13, 113, 165, 0.2), -12px 0px 0px 12px rgba(1
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
-.parlex-back { 
+.parlex-back {
 	padding: 60px 20px;
 	background-color: rgba(0, 0, 0, 0.37);
 	color: #FDFDFD !important;
@@ -533,7 +533,7 @@ box-shadow: 12px 0px 0px 12px rgba(13, 113, 165, 0.2), -12px 0px 0px 12px rgba(1
 	border-radius: 50%;
 	background-color: #FFF;
 }
-.diagram { 
+.diagram {
 	margin: 2em 2em 2em 0;
 	float: left;
 }
@@ -541,9 +541,9 @@ box-shadow: 12px 0px 0px 12px rgba(13, 113, 165, 0.2), -12px 0px 0px 12px rgba(1
 	margin-top: 106px;
 }
 .skillContainer{
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
 	}
-.skillBox { 
+.skillBox {
 min-height:200px;
 }
 .container-sub {
@@ -573,7 +573,7 @@ min-height:200px;
 	top: 0;
 	left: 0;
 }
-.chart-text h4 { 
+.chart-text h4 {
 	font-size: 23px;
 }
 /*Experience*/
@@ -582,7 +582,7 @@ min-height:200px;
 }
 .experience-details .col-md-6{
 	margin-bottom: 40px;
-} 
+}
 .experience-details h4 {
 	margin: 4px 0px 2px;
 	font-size: 20px;
@@ -740,7 +740,7 @@ nav#filter a {
 	color:#737373;
 }
 a.current {
-	color: #5887FF !important; 
+	color: #5887FF !important;
 }
 .portfolio-items article img {
 	width: 100%;
@@ -905,7 +905,7 @@ footer {
 .contact ul li i {
 	margin-right: 15px;
 }
- 
+
 /*Clients*/
 .clients #owl-demo .item {
 	background: none;
@@ -926,7 +926,7 @@ footer {
 	margin: 0px 5px;
 }
 #portfolio{
-background: #DBDBDB;	
+background: #DBDBDB;
 	}
 #contactUs{
 	 background: #3394D5;
@@ -960,7 +960,7 @@ color: #000;
 .banner-container > img {
 	min-width: 100%;
 	height:400px;
-	
+
 }
 .team-member .member-img img {
 	max-width: 100%;
@@ -1010,12 +1010,12 @@ color: #000;
 }
 .chart-text {
 	margin-top: 90px;
-	display: inline-block !important; 
+	display: inline-block !important;
 }
 .skillContainer{
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
 	}
-.skillBox { 
+.skillBox {
 min-height:200px;
 display: inline-block;
 }
@@ -1034,7 +1034,7 @@ display: inline-block;
 
 @media (max-width: 480px) {
 .banner-container {
-	background-size: contain; 
+	background-size: contain;
 	overflow:hidden;
 }
 .header .container{
@@ -1065,7 +1065,7 @@ margin-top: 30%;
 	margin: 17px;
 }
 .banner-container > img {
-	width: auto; 
+	width: auto;
 	height:350px;
 }
 .page-section h1 {
@@ -1089,12 +1089,12 @@ margin-top: 30%;
 }
 .chart-text {
 	margin-top: -20px;
-	display: inline-block !important; 
+	display: inline-block !important;
 }
 .skillContainer{
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
 	}
-.skillBox { 
+.skillBox {
 min-height:200px;
 display: inline-block;
 }
