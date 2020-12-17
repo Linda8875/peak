@@ -109,7 +109,8 @@ a:hover {
 	margin: 4px;
 }
 h2 {
-	font-size: 40px;
+	font-size: 30px;
+  text-align: center;
 	margin: 0;
 	padding-bottom: 16px;
 	font-variant: small-caps;
