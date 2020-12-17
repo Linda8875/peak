@@ -48,6 +48,28 @@ padding-top: 20%;
 text-align:center;
 }
 
+#top {
+  position: relative;
+}
+.topHome {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+  background: #5887FF;
+}
+.topHome .fa-2x {
+  font-size: 20px;
+  color: #fff;
+  margin: 4px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 0;
+  padding-bottom: 16px;
+  font-variant: small-caps;
+}
 .element {
   background-image: url(curve.svg);
 }
