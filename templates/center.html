@@ -53,17 +53,15 @@
   </div>
 </section>
 
-<section id="filter">
-<section class="section has-background-black">
- <h2>Create a new playlist</h2>
-  <div class="container banner-content">
-  <form action="/algo_input" method="POST">
+<section class="hero-foot">
+  <section class="section has-background-black">
+    <form action="/algo_input" method="POST">
       <div class="container has-text-centered">
         <div class="columns is-vcentered is-12">
           <div class="dropdown is-active column is-2" style="margin-top: -210px">
             <div class="dropdown-menu" id="dropdown-menu3" role="menu">
               <select class="custom-select1 is-medium has-text-black" name="genre" id="genre-select">
-                <div class="dropbtn">
+                <div class="dropdown-content">
                   <option value="" disabled selected>Mood</option>
                 {% for genre in genres %}
                   <option {{genre}}>{{genre.capitalize()}}</option>
@@ -117,9 +115,14 @@
         </div>
       </div>
     </form>
-  </div>
-</section>
-</section>
-
-</body>
-</html>
+    </section>
+      <div>
+        <div class="content has-text-right has-text-white is-3" style="margin-top: -90px; width:100%">
+            <a href="https://www.lewagon.com" target="_blank">
+              <img src="static/logo_lewagon_red.png"  style="margin-top: -90px width:100%" alt="" width=20>
+              <img src="static/lewagon_white.png"  style="margin-top: -90px; padding-right: 20px width:100%" alt="" width=60>
+            </a>
+          </p>
+        </div>
+      </div>
+  </section>
