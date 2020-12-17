@@ -101,9 +101,9 @@ body, html {
       <div class="container has-text-centered">
         <div class="columns is-vcentered is-12">
           <div class="dropdown is-active column is-2" style="margin-top: 0px">
-            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+            <div class="search_categories" id="dropdown-menu3" role="menu">
               <select class="custom-select1" name="genre" id="genre-select">
-                <div class="dropdown-content">
+                <div class="select">
                   <option value="" disabled selected>Mood</option>
                 {% for genre in genres %}
                   <option {{genre}}>{{genre.capitalize()}}</option>
