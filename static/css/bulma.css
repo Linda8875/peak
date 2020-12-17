@@ -4723,10 +4723,10 @@ fieldset[disabled] .select select:hover {
 
 .search_categories{
   font-size: 16px;
-  padding: 10px 8px 10px 10px;
+  padding: 12px 12px 12px 10px;
   background: #fff;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 12px;
   overflow: hidden;
   position: relative;
 }
