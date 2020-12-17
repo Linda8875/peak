@@ -211,7 +211,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
   padding: 16px 15px;
   line-height: 18px;
   height: 50px;
-  /*color:#ffffff;*/;
+  color:#ffffff;
 }
 .navbar-brand b {
   color: #fff;
@@ -478,7 +478,7 @@ padding:60px 0;
 }
 #aboutUs .txtHead .fa {
   font-size: 58px;
-  color: #5E5E5E;
+  color: #ffffff;
 }
 .tileBox img{
 overflow:hidden;
@@ -996,7 +996,7 @@ color: #000;
 }
 .txtHead .fa {
     font-size: 58px;
-    color: #5E5E5E;
+    color: #ffffff;
 }
 .tileBox p {
     background-color: #F0F0F0;
