@@ -8866,6 +8866,10 @@ a.has-text-white:hover, a.has-text-white:focus {
   background-color: white !important;
 }
 
+.has-background-img {
+  background-image: url("static/soft.png");
+}
+
 .has-text-black {
   color: #0a0a0a !important;
 }
