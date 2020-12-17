@@ -126,8 +126,8 @@ h2 {
 	top: 0px;
 }
 .navbar-inverse .navbar-toggle {
-	border-color: #5887FF;
-	background-color: #5887FF;
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
 }
 .header .navbar {
 	margin: 0;
@@ -137,7 +137,7 @@ h2 {
 /*background-color: #5887FF;*/;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background: #5887FF;
+	background: #ffffff;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 	color: #fff;
