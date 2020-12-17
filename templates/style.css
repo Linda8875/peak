@@ -21,6 +21,32 @@ body {
   width: 100%;
 
 }
+.banner-content {
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+.banner-content h2 {
+  color: #fff;
+  font-size: 3.5em;
+  margin: 2% 0 30px;
+  line-height: 1.2em;
+}
+.banner-content p {
+  font-size: 1.6em;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+}
+.banner-content header {
+color: #fff;
+padding-top: 20%;
+}
+.banner-content .btn {
+text-align:center;
+}
 
 .element {
   background-image: url(curve.svg);
