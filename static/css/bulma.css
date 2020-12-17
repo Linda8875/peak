@@ -8867,7 +8867,10 @@ a.has-text-white:hover, a.has-text-white:focus {
 }
 
 .has-background-img {
-  background: url("static/soft.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("static/soft.png");
+  height: 100%;
+  background-position: center;
+  position: relative;
 }
 
 .has-text-black {
