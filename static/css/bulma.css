@@ -11646,6 +11646,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .section {
   padding: 3rem 1.5rem;
+  background: url(static/soft.png);
 }
 
 @media screen and (min-width: 1024px) {
