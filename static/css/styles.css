@@ -55,7 +55,7 @@ p {
 }
 .button-outline:hover {
 	color: #fff;
-	background: rgba(255,255,255,0.35);
+	background: rgba(255,255,255,0.9);
 }
 a {
 	color: #5887FF;
@@ -79,7 +79,7 @@ a:hover {
 	background: #DF6B00;
 }
 .btn-primary {
-	background: #5887FF;
+	background: #FFFFFF;
 }
 .form-control {
 	border-radius: 0px;
@@ -152,7 +152,7 @@ h2 {
 	color: #FFFFFF;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-	color: #5887FF;
+	color: #FFFFFF;
 	background: none;
 }
 .navbar-toggle {
@@ -243,7 +243,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
 	color: #fff;
 	background: none;
-	border-bottom:2px solid #5887FF;
+	border-bottom:2px solid #FFFFFF;
 	border-radius: 0px;
 }
 .navbar-nav > li:hover > a {
