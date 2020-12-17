@@ -1,24 +1,15 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block content %}
-
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="peak-logo">
-      <img src="{% static 'peak_logo.png'%}">
-    </a>
-    <h1>GET READY TO PEAK</h1>
-    <p>Experience music like never before. Gain control over your playlists recommendations and listen as they increase in tempo to provide you the perfect experience.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-python"><span class="glyphicon glyphicon-flash"></span> Create a new playlist</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/python-getting-started"><span class="glyphicon glyphicon-download"></span>Sort your existing songs</a>
-  </div>
-</div>
-
-
-<div class="jumbo text-left">
- <div class="container">
-  <h2>Create your own playlist</h2>
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html style="background-color: hsl(0, 0%, 4%);margin: 0; height: 100%; overflow: hidden">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peak - home</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <link rel="stylesheet" href="styles/debug.css">
+  </head>
 
   <style>
 
@@ -237,4 +228,3 @@
         </div>
       </div>
   </section>
-{% endblock %}
