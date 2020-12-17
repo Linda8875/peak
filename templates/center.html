@@ -40,81 +40,84 @@
 <div id="#top"></div>
 <section id="home">
   <div class="banner-container"> <img src="static/final_banner.png" alt="banner" />
-    <div class="container banner-content">
-      <div class="row">
-        <header class="centered">
-          <h1>Gain control over your music recommendations</h1>
-        </header>
+  <div class="container banner-content">
+    <div class="row">
+      <header class="centered">
+        <h1>Gain control over your music recommendations</h1>
+      </header>
+      <form action="/algo_input" method="POST">
+        <div class="container banner-content">
+          <div class="columns is-vcentered is-12">
+
+            <!-- MOOD-->
+            <div class="dropdown is-active column is-2" style="margin-top: -210px">
+              <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                <select class="custom-select1 is-medium has-text-black" name="genre" id="genre-select">
+                  <div class="dropdown-content">
+                    <option value="" disabled selected>Mood</option>
+                  {% for genre in genres %}
+                    <option {{genre}}>{{genre.capitalize()}}</option>
+                  {% endfor %}
+                  </div>
+                </select>
+              </div>
+            </div>
+
+            <!-- DECADE-->
+            <div class="dropdown is-active column is-2" style="margin-top: -210px">
+             <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                <select class="custom-select2 is-medium has-text-black" name="decade" id="decade-select">
+                  <div class="dropdown-content">
+                    <option value="" disabled selected>Decade</option>
+                  {% for decade in decades %}
+                    <option value="{{decade}}">{{decade.capitalize()}}</option>
+                  {% endfor %}
+                  </div>
+                </select>
+              </div>
+            </div>
+
+            <!-- TIME-->
+            <div class="dropdown is-active column is-2" style="margin-top: -210px">
+              <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                <select class="custom-select3 is-medium has-text-black" name="length" id="length-select">
+                  <div class="dropdown-content">
+                    <option value="" disabled selected>Time</option>
+                  {% for length in lengths %}
+                    <option value="{{length}}">{{length.capitalize()}}</option>
+                  {% endfor %}
+                  </div>
+                </select>
+              </div>
+            </div>
+
+            <!-- POPULARITY-->
+            <div class="dropdown is-active column is-2" style="margin-top: -210px">
+              <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                <select class="custom-select4 is-medium has-text-black is-rounded" name="popularity" id="popularity-select">
+                  <div class="dropdown-content">
+                    <option value="" disabled selected>Popularity</option>
+                  {% for popularity in popularities %}
+                    <option value="{{popularity}}">{{popularity.capitalize()}}</option>
+                  {% endfor %}
+                  </div>
+                </select>
+              </div>
+            </div>
+
+            <div class="field is-active column is-2 is-black" style="margin-top: -135px">
+                <input class="input-select has-text-centered has-text-black" type="text" placeholder="Name it" name="playlist_name">
+            </div>
+            <div class="column is-active is-active is-2" style="margin-top: -145px">
+              <input class="custom-button is-normal has-text-black is-outlined" type="submit" value="Create it">
+            </div>
+
+          </div>
+        </div>
+      </form>
       </div>
     </div>
   </div>
-</section>
-
-
-<!-- .section -->
-<section class="hero-foot">
-<section class="section has-background-black">
-<form action="/algo_input" method="POST">
-  <div class="container has-text-centered">
-    <div class="columns is-vcentered is-12">
-      <div class="dropdown is-active column is-2" style="margin-top: -210px">
-        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-          <select class="custom-select1 is-medium has-text-black" name="genre" id="genre-select">
-            <div class="dropdown-content">
-              <option value="" disabled selected>Mood</option>
-            {% for genre in genres %}
-              <option {{genre}}>{{genre.capitalize()}}</option>
-            {% endfor %}
-            </div>
-          </select>
-        </div>
-      </div>
-      <div class="dropdown is-active column is-2" style="margin-top: -210px">
-       <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-          <select class="custom-select2 is-medium has-text-black" name="decade" id="decade-select">
-            <div class="dropdown-content">
-              <option value="" disabled selected>Decade</option>
-            {% for decade in decades %}
-              <option value="{{decade}}">{{decade.capitalize()}}</option>
-            {% endfor %}
-            </div>
-          </select>
-        </div>
-      </div>
-      <div class="dropdown is-active column is-2" style="margin-top: -210px">
-        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-          <select class="custom-select3 is-medium has-text-black" name="length" id="length-select">
-            <div class="dropdown-content">
-              <option value="" disabled selected>Time</option>
-            {% for length in lengths %}
-              <option value="{{length}}">{{length.capitalize()}}</option>
-            {% endfor %}
-            </div>
-          </select>
-        </div>
-      </div>
-      <div class="dropdown is-active column is-2" style="margin-top: -210px">
-        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-          <select class="custom-select4 is-medium has-text-black is-rounded" name="popularity" id="popularity-select">
-            <div class="dropdown-content">
-              <option value="" disabled selected>Popularity</option>
-            {% for popularity in popularities %}
-              <option value="{{popularity}}">{{popularity.capitalize()}}</option>
-            {% endfor %}
-            </div>
-          </select>
-        </div>
-      </div>
-      <div class="field is-active column is-2 is-black" style="margin-top: -135px">
-          <input class="input-select has-text-centered has-text-black" type="text" placeholder="Name it" name="playlist_name">
-      </div>
-      <div class="column is-active is-active is-2" style="margin-top: -145px">
-        <input class="custom-button is-normal has-text-black is-outlined" type="submit" value="Create it">
-      </div>
-    </div>
-  </div>
-</form>
-</section>
 </section>
 </body>
 </html>
