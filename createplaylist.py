@@ -20,7 +20,7 @@ redirect_uri = os.getenv('SPOTIPY_REDIRECT_URI')
 #Import classes from other files
 
 from spotifyclient import *
-authorization_token = generating_access_token()
+#authorization_token = generating_access_token()
 
 from playlist import *
 
