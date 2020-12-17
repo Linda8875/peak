@@ -352,19 +352,15 @@ background:#5887FF;
 color:#fff;
 }
 .banner-content .hireMe{
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  color: black;
-  font-size: 16px;
-  padding: 16px 100px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
+background: #fff;
+clear: right;
+margin: 0 auto;
+display: block;
+text-align: center;
+width: 150px;
+color: #000;
+padding: 8px 5px;
+margin-top: 25px;
 }
 
 .banner-content header  h1{
