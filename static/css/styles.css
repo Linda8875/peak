@@ -1231,7 +1231,7 @@ width:100%;
 .hero-image2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("static/soft.png");
   height: 100%;
-  background-position: center;
+  background-position: top;
   position: relative;
 }
 
