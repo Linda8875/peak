@@ -8867,7 +8867,7 @@ a.has-text-white:hover, a.has-text-white:focus {
 }
 
 .has-background-img {
-  background-image: url("static/soft.png");
+  background: url("static/soft.png");
 }
 
 .has-text-black {
