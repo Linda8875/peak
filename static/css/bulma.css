@@ -4722,8 +4722,8 @@ fieldset[disabled] .select select:hover {
 }
 
 .search_categories{
-  font-size: 13px;
-  padding: 10px 8px 10px 18px;
+  font-size: 16px;
+  padding: 10px 8px 10px 20px;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -4732,7 +4732,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .search_categories .select{
-  width: 120%;
+  width: 130%;
   background:url('arrow.png') no-repeat;
   background-position:80% center;
 }
