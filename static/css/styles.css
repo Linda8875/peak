@@ -356,16 +356,15 @@ background: #fff;
 clear: right;
 position: absolute;
 top: 80%;
-display: block;
+left: 50%;
 text-align: center;
 width: 1500px;
 color:#000;
 padding:8px 5px;
-margin-top:300px;
 }
 .banner-content header  h1{
- text-align:center;
- margin: 0;
+text-align:center;
+margin: 10;
 padding: 0;
 font-size: 3.5em;
 font-weight: 700;
@@ -373,6 +372,7 @@ letter-spacing: .1em;
 line-height: 1em;
 text-transform: uppercase;
 }
+
 .banner-content header p{
  text-align:center;
  font-size: 2em;
