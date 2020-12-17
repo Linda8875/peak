@@ -871,7 +871,7 @@ body {
   transition: all 400ms;
 }
 #navigation > li > a.current,  #navigation > li:hover > a {
-  background: #999999;
+  background: #ffffff;
 }
 .pageSection {
   min-height: 600px;
