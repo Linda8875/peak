@@ -303,9 +303,9 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	left: 0px;
 	right: 0px;
 }
-.banner-content h2 {
+.banner-content h1 {
 	color: #fff;
-	font-size: 3.5em;
+	font-size: 4.5em;
 	margin: 2% 0 30px;
 	line-height: 1.2em;
 }
@@ -380,6 +380,7 @@ letter-spacing: .1em;
 line-height: 3em;
 text-transform: uppercase;
 }
+
 .centered {
 margin-left: auto;
 margin-right: auto;
