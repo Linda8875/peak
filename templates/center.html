@@ -13,6 +13,7 @@
 <!-- Font Awesome -->
 <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
 <header class="header">
   <div class="container">
@@ -20,6 +21,7 @@
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         </div>
+
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
@@ -40,7 +42,7 @@
 
 <div id="#top"></div>
 <section id="home">
-  <div class="banner-container"> <img src="../static/final_banner.jpg" alt="banner" />
+  <div class="banner-container"> <img src="/static/final_banner.jpg" alt="banner" />
   <div class="container banner-content">
     <div class="row">
       <header class="centered">
@@ -48,16 +50,20 @@
         <p>Gain control over your music recommendations and get the DJ-set experience</p>
       </header>
     </div>
-    <div class="row">
-      <form action="/algo_input" method="POST">
+  </div>
+</div>
+</section>
+
+  <section class="hero-foot">
+  <section class="section has-background-black">
+    <form action="/algo_input" method="POST">
       <div class="container has-text-centered">
         <div class="columns is-vcentered is-12">
-
           <div class="dropdown is-active column is-2" style="margin-top: -210px">
             <div class="dropdown-menu" id="dropdown-menu3" role="menu">
               <select class="custom-select1 is-medium has-text-black" name="genre" id="genre-select">
                 <div class="dropdown-content">
-                  <option value="" disabled selected>Moods</option>
+                  <option value="" disabled selected>Mood</option>
                 {% for genre in genres %}
                   <option {{genre}}>{{genre.capitalize()}}</option>
                 {% endfor %}
@@ -65,7 +71,6 @@
               </select>
             </div>
           </div>
-
           <div class="dropdown is-active column is-2" style="margin-top: -210px">
            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
               <select class="custom-select2 is-medium has-text-black" name="decade" id="decade-select">
@@ -78,7 +83,6 @@
               </select>
             </div>
           </div>
-
           <div class="dropdown is-active column is-2" style="margin-top: -210px">
             <div class="dropdown-menu" id="dropdown-menu3" role="menu">
               <select class="custom-select3 is-medium has-text-black" name="length" id="length-select">
@@ -91,7 +95,6 @@
               </select>
             </div>
           </div>
-
           <div class="dropdown is-active column is-2" style="margin-top: -210px">
             <div class="dropdown-menu" id="dropdown-menu3" role="menu">
               <select class="custom-select4 is-medium has-text-black is-rounded" name="popularity" id="popularity-select">
@@ -104,19 +107,25 @@
               </select>
             </div>
           </div>
-
           <div class="field is-active column is-2 is-black" style="margin-top: -135px">
               <input class="input-select has-text-centered has-text-black" type="text" placeholder="Name it" name="playlist_name">
           </div>
-
           <div class="column is-active is-active is-2" style="margin-top: -145px">
             <input class="custom-button is-normal has-text-black is-outlined" type="submit" value="Create it">
           </div>
         </div>
       </div>
-      </form>
-    </div>
-  </div>
-</section>
+    </form>
+    </section>
+      <div>
+        <div class="content has-text-right has-text-white is-3" style="margin-top: -90px; width:100%">
+            <a href="https://www.lewagon.com" target="_blank">
+              <img src="static/logo_lewagon_red.png"  style="margin-top: -90px width:100%" alt="" width=20>
+              <img src="static/lewagon_white.png"  style="margin-top: -90px; padding-right: 20px width:100%" alt="" width=60>
+            </a>
+          </p>
+        </div>
+      </div>
+  </section>
 </body>
 </html>
