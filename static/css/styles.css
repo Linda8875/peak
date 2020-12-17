@@ -354,7 +354,8 @@ color:#fff;
 .banner-content .hireMe{
 background: #fff;
 clear: right;
-margin: 0 auto;
+position: absolute;
+top: 80%;
 display: block;
 text-align: center;
 width: 1500px;
