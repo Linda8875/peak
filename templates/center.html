@@ -113,9 +113,9 @@ body, html {
             </div>
           </div>
           <div class="dropdown is-active column is-2" style="margin-top: 0px">
-           <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+           <div class="search_categories" id="dropdown-menu3" role="menu">
               <select class="custom-select1" name="decade" id="decade-select">
-                <div class="dropdown-content">
+                <div class="select">
                   <option value="" disabled selected>Decade</option>
                 {% for decade in decades %}
                   <option value="{{decade}}">{{decade.capitalize()}}</option>
@@ -125,9 +125,9 @@ body, html {
             </div>
           </div>
           <div class="dropdown is-active column is-2" style="margin-top: 0px">
-            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+            <div class="search_categories" id="dropdown-menu3" role="menu">
               <select class="custom-select1" name="length" id="length-select">
-                <div class="dropdown-content">
+                <div class="select">
                   <option value="" disabled selected>Time</option>
                 {% for length in lengths %}
                   <option value="{{length}}">{{length.capitalize()}}</option>
@@ -137,9 +137,9 @@ body, html {
             </div>
           </div>
           <div class="dropdown is-active column is-2" style="margin-top: 0px">
-            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+            <div class="search_categories" id="dropdown-menu3" role="menu">
               <select class="custom-select1" name="popularity" id="popularity-select">
-                <div class="dropdown-content">
+                <div class="select">
                   <option value="" disabled selected>Popularity</option>
                 {% for popularity in popularities %}
                   <option value="{{popularity}}">{{popularity.capitalize()}}</option>
