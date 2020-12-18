@@ -1143,7 +1143,7 @@ color: #fff;
 }
 
 .input-select {
-background-color: transparent;
+background-color: #fff;
 text-align-last:center;
 width:100%;
 font-size: 16px;
@@ -1151,7 +1151,7 @@ padding: 50px 10px 50px 10px;
 border-radius: 12px;
 overflow: hidden;
 position: relative;
-color: #fff;
+color: #000000;
 }
 
 
