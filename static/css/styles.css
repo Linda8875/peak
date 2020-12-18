@@ -1139,12 +1139,19 @@ nav#filter li {
 background-color: transparent;
 text-align-last:center;
 width:90%;
+color: #fff;
 }
 
 .input-select {
 background-color: transparent;
 text-align-last:center;
 width:100%;
+font-size: 16px;
+padding: 50px 10px 50px 10px;
+border-radius: 12px;
+overflow: hidden;
+position: relative;
+color: #fff;
 }
 
 
@@ -1157,6 +1164,7 @@ padding: 50px 10px 50px 10px;
 border-radius: 12px;
 overflow: hidden;
 position: relative;
+color: #fff;
 }
 
 
