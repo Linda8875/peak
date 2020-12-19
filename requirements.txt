@@ -16,6 +16,7 @@ backcall==0.2.0
 base58==2.0.1
 bleach==3.2.1
 blinker==1.4
+boto3==1.16.22
 botocore==1.17.44
 branca==0.4.1
 bs4==0.0.1
@@ -102,7 +103,7 @@ numpy==1.18.4
 oauthlib==3.1.0
 opt-einsum==3.3.0
 packaging==20.4
-pandas
+pandas==0.24.2
 pandocfilters==1.4.2
 parso==0.7.1
 pathtools==0.1.2
@@ -147,9 +148,10 @@ rsa==4.6
 s3fs==0.5.1
 s3transfer==0.3.3
 scikit-image==0.17.2
-scikit-learn
+scikit-learn==0.20.4
 Send2Trash==1.5.0
 setuptools-git==1.2
+share-code @ git+git://github.com/MatthiasGabriel108/share_code.git@45a26114973135a353940aaa85e02d902a2affa2
 simplejson==3.17.2
 six==1.15.0
 smart-open==3.0.0
