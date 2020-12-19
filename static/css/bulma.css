@@ -189,6 +189,7 @@
   padding-top: calc(0.5em - 1px);
   position: relative;
   vertical-align: top;
+  color: #ffffff;
 }
 
 .button:focus, .input:focus, .textarea:focus, .select select:focus, .file-cta:focus,
@@ -3224,8 +3225,8 @@ a.tag:hover {
 /* Bulma Form */
 .input, .textarea, .select select {
   background-color: transparent;
-  border-color: #dbdbdb;
-  border-radius: 4px;
+  border-color: transparent;
+  border-radius: 0px;
   color: #363636;
 }
 
@@ -4706,7 +4707,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .dropdown-content {
-  background-color: white;
+  background-color: transparent;
   border-radius: 0;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
@@ -4723,25 +4724,26 @@ fieldset[disabled] .select select:hover {
 
 .search_categories{
   font-size: 16px;
-  padding: 50px 10px 50px 10px;
   background: transparent;
-  border: 1px solid #ccc;
-  border-radius: 12px;
   overflow: hidden;
   position: relative;
 }
 
-.search_categories .select{
-  width: 130%;
-  background:url('arrow.png') no-repeat;
-  background-position:80% center;
+.select{
+width: 130%;
+background: url(arrow.png) no-repeat;
+background-position: 80% center;
+border-color: #fff;
+border-radius: 12px;
+border-width: 1px;
+border-color: #fff;
 }
 
 .search_categories .select select{
   background: transparent;
   line-height: 1;
-  border: 0;
-  padding: 0;
+  border: 0px;
+  padding: 0px;
   border-radius: 0;
   width: 120%;
   position: relative;

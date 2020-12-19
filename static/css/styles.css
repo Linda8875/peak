@@ -207,11 +207,11 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 /*----Nav ----*/
 .header .navbar-brand {
-  float: left;
+  float: right;
   padding: 16px 15px;
   line-height: 18px;
   height: 50px;
-  color:#ffffff;
+  color:#fff;
 }
 .navbar-brand b {
   color: #fff;
@@ -1136,34 +1136,36 @@ nav#filter li {
 
 
 .custom-select1 {
-background-color: transparent;
+background-color: #ffffff;
 text-align-last:center;
 width:90%;
 }
 
 .input-select {
-background-color: #fff;
-text-align-last:center;
-width:100%;
+background-color: transparent;
+text-align-last: center;
+width: 100%;
+background-position: 80% center;
 font-size: 16px;
-padding: 50px 10px 50px 10px;
+padding: 7px;
+color: #ffffff;
 border-radius: 12px;
-overflow: hidden;
-position: relative;
-color: #000000;
+border-width: 1px;
+border-color: #fff;
 }
 
 
 .custom-button {
 background-color: rgb(51, 212, 110);
-text-align-last:center;
-width:100%;
+text-align-last: center;
+width: 100%;
 font-size: 16px;
-padding: 50px 10px 50px 10px;
-border-radius: 12px;
-overflow: hidden;
+overflow: inherit;
 position: relative;
 color: #fff;
+padding: 07px;
+margin-top: -7px;
+border-radius: 12px;
 }
 
 
