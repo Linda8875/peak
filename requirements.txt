@@ -1,3 +1,4 @@
+req
 absl-py==0.11.0
 aiobotocore==1.1.2
 aiohttp==3.7.2
@@ -11,9 +12,11 @@ astroid==2.4.2
 astunparse==1.6.3
 async-generator==1.10
 async-timeout==3.0.1
+attrs
 attrs==20.2.0
 backcall==0.2.0
 base58==2.0.1
+bleach
 bleach==3.2.1
 blinker==1.4
 boto3==1.16.22
@@ -70,6 +73,10 @@ imbalanced-learn==0.7.0
 imblearn==0.0
 importlib-metadata==2.0.0
 iniconfig==1.0.1
+ipykernel
+ipython
+ipython-genutils
+ipywidgets
 isodate==0.6.0
 isort==5.5.4
 itsdangerous==1.1.0
@@ -79,6 +86,11 @@ jmespath==0.10.0
 joblib==0.14.1
 json5==0.9.5
 jsonschema==3.2.0
+jupyter
+jupyter-client
+jupyter-console
+jupyter-core
+jupyterlab-pygments
 kiwisolver==1.2.0
 korean-lunar-calendar==0.2.1
 lazy-object-proxy==1.4.3
@@ -93,11 +105,15 @@ mccabe==0.6.1
 memoized-property==1.0.3
 missingno==0.4.2
 mistune==0.8.4
+more-itertools
 msrest==0.6.19
 multidict==5.0.2
+nbconvert
+nbformat
 nest-asyncio==1.4.1
 networkx==2.5
 nodeenv==1.5.0
+notebook
 numba==0.51.2
 numpy==1.18.4
 oauthlib==3.1.0
@@ -140,6 +156,7 @@ pytz==2020.1
 PyWavelets==1.1.1
 PyYAML==5.3.1
 pyzmq==19.0.2
+qtconsole
 querystring-parser==1.2.4
 requests==2.24.0
 requests-oauthlib==1.3.0
@@ -151,7 +168,6 @@ scikit-image==0.17.2
 scikit-learn==0.20.4
 Send2Trash==1.5.0
 setuptools-git==1.2
-share-code @ git+git://github.com/MatthiasGabriel108/share_code.git@45a26114973135a353940aaa85e02d902a2affa2
 simplejson==3.17.2
 six==1.15.0
 smart-open==3.0.0
@@ -168,12 +184,14 @@ toml==0.10.1
 toolz==0.11.1
 tornado==6.0.4
 tox==3.20.1
+traitlets
 typing-extensions==3.7.4.3
 urllib3==1.25.10
 validators==0.18.1
 virtualenv==20.1.0
 visions==0.5.0
 watchdog==0.10.3
+wcwidth
 webencodings==0.5.1
 websocket-client==0.57.0
 Werkzeug==1.0.1
