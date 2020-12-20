@@ -1,6 +1,6 @@
 req
 absl-py==0.11.0
-aiobotocore==1.1.2
+aiobotocore
 aiohttp==3.7.2
 aioitertools==0.7.1
 alembic==1.4.1
@@ -19,7 +19,7 @@ base58==2.0.1
 bleach
 bleach==3.2.1
 blinker==1.4
-boto3==1.16.22
+boto3
 botocore
 branca==0.4.1
 bs4==0.0.1
