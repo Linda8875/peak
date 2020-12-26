@@ -16,6 +16,9 @@ client_id = os.getenv('CLIENT_ID')
 client_secret = os.getenv('CLIENT_SECRET')
 user_id = os.getenv('user_id')
 redirect_uri = os.getenv('SPOTIPY_REDIRECT_URI')
+genius_key = os.getenv('genius_key')
+g_client_id = os.getenv('g_client_id')
+g_client_secret = os.getenv('g_client_secret')
 
 from createplaylist import *
 from spotifyclient import *
@@ -81,6 +84,13 @@ def algo_input():
         return redirect("/page_player")
 
     return render_template("error.html")
+
+@app.route("/karaoke", methods=["POST","GET"])
+def get_lyrics():
+    session['playlist_id_widget']= playlist_id
+    songs = GetLyrics(client_id, client_secret, user_id,playlist_id, genius_key)
+    song_lyrics = songs.get_lyrics()
+    return song_lyrics
 
 
 '''run app'''

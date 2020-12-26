@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html style="background-color: hsl(0, 0%, 4%) ;margin: 0; height: 100%; overflow: hidden">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Peak - playlist</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Linda's Playlists</title>
+<link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+<link rel="stylesheet" type="text/css" href="static/css/bulma.css" />
+<link rel="stylesheet" href="static/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="static/css/isotope.css" media="screen" />
+<link rel="stylesheet" href="static/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="static/css/da-slider.css" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css"/>
 </head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+      <!--/.navbar-header-->
+      <div id="main-nav" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav" id="mainNav">
+          <li class="active"><a href="#home" class="scroll-link">Home</a></li>
+          <li><a href="#create" class="scroll-link">Create playlists</a></li>
+          <li><a href="#sort" class="scroll-link">Arrange songs into playlists</a></li>
+          <li><a href="#karaoke" class="scroll-link">Karaoke</a></li>
+          <li><a href="#about" class="scroll-link">About</a></li>
+          <li><a href="#contact" class="scroll-link">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.navbar-collapse-->
+    </nav>
+    <!--/.navbar-->
+  </div>
+  <!--/.container-->
+</header>
+
 
 <style>
 .center {
@@ -72,36 +103,36 @@
         }
 .card-heading1 {
   color: rgb(101, 43, 117);
-  font-size: 200px;
+  font-size: 40px;
   font-family: Helvetica;
   width: 100%;
 }
 .card-heading2 {
   color: rgb(42, 198, 185);
-  font-size: 200px;
+  font-size: 40px;
   font-family: Helvetica;
   width: 100%;
 }
 .card-heading3 {
   color: rgb(230, 231, 125);
-  font-size: 200px;
+  font-size: 40px;
   font-family: Helvetica;
   width: 100%;
 }
 .card-heading4 {
   color: rgb(241, 31, 80);
-  font-size: 200px;
+  font-size: 40px;
   font-family: Helvetica;
   width: 100%;
 }
 .card-heading5 {
   color: rgb(248, 150, 61);
-  font-size: 200px;
+  font-size: 40px;
   font-family: Helvetica;
   width: 100%;
 }
 .section-select {
-  padding: 200px 200px 200px 800px;
+  padding: 100px 0px 0px 700px;
 }
 
 .columns {
@@ -113,48 +144,19 @@
 <body>
   <section>
     <div class="columns is-vcentered">
-      <div class="wrapperlt">
-        <h1 class=card-heading1>{{playlist_name}}</h1>
-      </div>
-    </div>
-      <div class="wrapperrt" style="padding-top:20px">
+      <div class="section-select is-vcentered">
+        <h1>{{playlist_name}}</h1>
         <h1 class=card-heading2>{{length}}</h1>
-      </div>
-    </div>
-      <div class="wrapperrt" style="padding-top:185px">
         <h1 class=card-heading3>{{genre}}</h1>
-      </div>
-    </div>
-    </div>
-      <div class="wrapperrt" style="padding-top:365px">
         <h1 class=card-heading4>{{decade}}</h1>
-      </div>
-    </div>
-    </div>
-      <div class="wrapperrt" style="padding-top:560px">
         <h1 class=card-heading5>{{popularity}}</h1>
       </div>
     </div>
   </section>
-  </div>
- <div class="columns is-12 has-background-black">
-    <div class="section-select is-vcentered has-background-black">
-      <a> <iframe src="https://open.spotify.com/embed/playlist/{{widget}}" width="300" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media" style="margin-left: 180px; width:100%" ></iframe></a>
-    </div>
-  </div>
-</body>
 
-   </section>
-    <section class="hero-foot">
-      <section class="section has-background-black">
-      <div>
-        <div class="content has-text-right has-text-white is-2" style="margin-top: -130px">
-            <a href="https://www.lewagon.com" target="_blank">
-              <img src="static/logo_lewagon_red.png"  style="margin-top: -130px" alt="" width=20>
-              <img src="static/lewagon_white.png"  style="margin-top: -130px" alt="" width=60>
-            </a>
-        </div>
-      </div>
-        </div>
-      </section>
-  </section>
+<div class="columns is-12">
+  <div class="section-select is-vcentered">
+    <a> <iframe src="https://open.spotify.com/embed/playlist/{{widget}}" width="600" height="850" frameborder="0" allowtransparency="true" allow="encrypted-media" style="margin-left: 180px; width:100%" ></iframe></a>
+  </div>
+</div>
+</body>
