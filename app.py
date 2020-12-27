@@ -1,6 +1,6 @@
 '''imports'''
 from flask import Flask, redirect, url_for, render_template, request, session
-from function import genre, decade, track, length, popularity
+from function import genre, decade, track, length, popularity, pl_name
 from werkzeug.datastructures import ImmutableMultiDict
 from dotenv import load_dotenv
 import os
@@ -62,7 +62,8 @@ def center():
     tracks = track()
     lengths = length()
     popularities = popularity()
-    return render_template("center.html", genres=genres, decades=decades, tracks = tracks, lengths = lengths, popularities = popularities)
+    pl_names = pl_name()
+    return render_template("center.html", genres=genres, decades=decades, tracks = tracks, lengths = lengths, popularities = popularities, pl_names = pl_names)
 
 
 @app.route("/algo_input", methods=["POST","GET"])
@@ -86,11 +87,8 @@ def algo_input():
     return render_template("error.html")
 
 @app.route("/karaoke", methods=["POST","GET"])
-def get_lyrics():
-    session['playlist_id_widget']= playlist_id
-    songs = GetLyrics(client_id, client_secret, user_id,playlist_id, genius_key)
-    song_lyrics = songs.get_lyrics()
-    return song_lyrics
+def karaoke():
+    return redirect("karaoke.html")
 
 
 '''run app'''

@@ -210,13 +210,61 @@ body, html {
 <div class="hero-image4">
 <section id="karaoke">
 <div class="hero-text2">
-  <h1 style="font-size:40px; margin-top: 0px; color: #fff">Welcome to the Karaoke</h1>
-  <p style="font-size: 20px; color: #fff; padding: 20px 10px 50px 10px">Sing along</p>
-</br></br></br>
+  <h1 style="font-size:40px; margin-top: 0px; padding: 20px 180px 10px 20px">Start your own Karaoke</h1>
+  <form action="/karaoke" method="POST">
+    <div class="container has-text-centered">
+    <div class="columns is-vcentered is-12">
+    <div class="dropdown is-active column is-2" style="margin-top: 100px">
+      <div class="search_categories" id="dropdown-menu3" role="menu" style="width: 300px;">
+        <select class="select" name="pl_name" id="pl_name-select">
+          <div class="select">
+            <option value="" class="select" disabled selected>Choose a Playlist</option>
+              {% for pl_name in pl_names %}
+            <option value="{{pl_name}}">{{pl_name.capitalize()}}</option>
+              {% endfor %}
+          </div>
+        </select>
+      </div>
+    </div>
+    <div class="column is-active is-active is-2" style="margin-left: -100px;margin-top: 200px;width: 320px;color:  #000000;">
+      <input class="custom-button" type="submit" value="Start" style="color: black">
+    </div>
+  </div></div>
+  </form>
 </div>
-<form action="/karaoke" method="post">
-    <input type="submit" name="Start" value="Start" />
-</form>
+</section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 </div>
 

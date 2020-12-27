@@ -13,6 +13,8 @@ client_secret = os.getenv('CLIENT_SECRET')
 genius_key = os.getenv('genius_key')
 
 
+
+
 def get_track_names():
     track_names = []
     for song in range(len(playlist['items'])):
@@ -81,6 +83,3 @@ def get_lyrics():
                 print(f"Retrieved track {i} lyrics!")
         song_lyrics.append(lyrics)
     return song_lyrics
-
-songs = GetLyrics(client_id, client_secret, user_id,playlist_id, genius_key)
-song_lyrics = songs.get_lyrics()

@@ -1,3 +1,9 @@
+import requests
+import json
+from spotifyclient import *
+
+
+
 def genre():
     return ['Rock', 'Soul', 'Pop', 'Classical', 'Rap', 'Jazz', 'Hip Hop', 'Folk', 'Funk', 'Country', 'Techno', 'House']
 
@@ -12,6 +18,13 @@ def length():
 
 def popularity():
     return ['Not Popular', 'Less Popular', 'Popular']
+
+def pl_name():
+    base_url = 'https://api.spotify.com/v1/me/playlists'
+    headers = {'Authorization': 'Bearer ' + authorization_token}
+    response = requests.get(url=base_url,headers=headers)
+    pl_names = [li['name'] for li in response.json()['items']]
+    return pl_names
 
 if __name__ == '__main__':
     genre()
