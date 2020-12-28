@@ -1,6 +1,7 @@
 '''imports'''
 from flask import Flask, redirect, url_for, render_template, request, session
-from function import genre, decade, track, length, popularity, pl_name
+from function import genre, decade, track, length, popularity, get_song_url
+from getlyrics import *
 from werkzeug.datastructures import ImmutableMultiDict
 from dotenv import load_dotenv
 import os
@@ -30,15 +31,6 @@ app.secret_key = "qsdfghjklm"
 
 '''define pages on app'''
 
-@app.route("/page_player_pres", methods=["POST","GET"])
-def playlist_pres():
-    widget = session.get('playlist_id_widget')
-    genre = session.get('genre')
-    decade = session.get('decade')
-    length = session.get('length')
-    popularity = session.get('popularity')
-    playlist_name = session.get('playlist_name')
-    return render_template("page_player_pres.html", widget=widget, genre=genre, decade=decade, length=length, popularity=popularity, playlist_name=playlist_name)
 
 @app.route("/page_player", methods=["POST","GET"])
 def page_player():
@@ -48,7 +40,10 @@ def page_player():
     length = session.get('length')
     popularity = session.get('popularity')
     playlist_name = session.get('playlist_name')
-    return render_template("page_player.html", widget=widget, genre=genre, decade=decade, length=length, popularity=popularity, playlist_name=playlist_name)
+    track_names = get_track_names(widget)
+    track_artists = get_track_artists(widget)
+    song_lyrics = get_song_url()
+    return render_template("page_player.html", widget=widget, genre=genre, decade=decade, length=length, popularity=popularity, playlist_name=playlist_name, track_names=track_names, track_artists=track_artists, song_lyrics=song_lyrics)
 
 @app.route("/error", methods=["POST","GET"])
 def error():
@@ -62,8 +57,7 @@ def center():
     tracks = track()
     lengths = length()
     popularities = popularity()
-    pl_names = pl_name()
-    return render_template("center.html", genres=genres, decades=decades, tracks = tracks, lengths = lengths, popularities = popularities, pl_names = pl_names)
+    return render_template("center.html", genres=genres, decades=decades, tracks = tracks, lengths = lengths, popularities = popularities)
 
 
 @app.route("/algo_input", methods=["POST","GET"])
@@ -85,10 +79,6 @@ def algo_input():
         return redirect("/page_player")
 
     return render_template("error.html")
-
-@app.route("/karaoke", methods=["POST","GET"])
-def karaoke():
-    return redirect("karaoke.html")
 
 
 '''run app'''
